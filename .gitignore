@@ -1,0 +1,8 @@
+.hypothesis
+.vscode
+*cache*
+.cov*
+*lock
+*.xml
+.DS*
+*build

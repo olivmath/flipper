@@ -1,0 +1,6 @@
+{
+	"name": "Existing Dockerfile",
+	"postCreateCommand": "poetry install && pip install --upgrade pip",
+	"context": "..",
+	"dockerFile": "./Dockerfile"
+}
