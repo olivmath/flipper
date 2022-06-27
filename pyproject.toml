@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "auction"
-version = "0.1.0"
+name = "flipper"
+version = "0.1.1"
 description = ""
 authors = ["Lucas Oliveira <olivmath@protonmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-eth-ape = "0.3.1"
+eth-ape = "0.3.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"
