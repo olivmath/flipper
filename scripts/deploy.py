@@ -1,8 +1,5 @@
-from os import O_WRONLY
-
-
 def main():
     from ape import project, accounts
 
-    owner = accounts.load("g")
+    owner = accounts.load("my_wallet")
     owner.deploy(project.Flipper)

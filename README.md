@@ -9,6 +9,9 @@
 - `ApeWorX`: _framework_ de "_workflow_" para construir contratos usando a linguagem `Python`
 
 **⚠️ Se tiver dúvidas veja meu repositório: [Flipper](https://github.com/olivmath/flipper)**
+**[Documentação do Ganache](https://trufflesuite.com/docs/ganache/)**
+**[Documentação do ApeWorX](https://docs.apeworx.io/ape/stable/)**
+**[*Academy* do ApeWorX](https://academy.apeworx.io)**
 
 ---
 
@@ -35,6 +38,7 @@ O contrato consiste apenas em salvar um variável "boolena" que tem a possibilid
 ## 🌳 Ambiente:
 
 **[🚨 Instale o Python antes](https://www.python.org/downloads/)**
+**[🚨 Instale também o Ganache](https://github.com/trufflesuite/ganache)**
 
 Instale o `ApeWorX`:
 
@@ -239,3 +243,57 @@ def test_get_fliped_event(flipper, another):
 ---
 
 ## 🚀 Deploy
+
+Por fim vamos fazer o deploy em uma rede local usando o `ganache`.
+
+Coloque no arquivo `ape-config.yaml`:
+
+```yaml
+geth:
+  ethereum:
+    mainnet:
+      uri: http://127.0.0.1:8545
+```
+
+Agora precisamos de uma carteira que tenha ETH para fazer o deploy.
+Inicie o `ganache` que ele irá gerar algumas.
+
+```
+ganache -s "SEED"
+```
+
+**⚠️ Usando o `-s` podemos passar um valor qualquer para que o ganache crie carteiras de forma determinística**
+
+Pegue uma chave privada do `ganache` e **⚠️ abra outro terminal** para importar ela no `ape`:
+
+```
+ape accounts import my_wallet
+Enter Private Key: COLE_A_CHAVE_PRIVADA_AQUI
+Create Passphrase: CRIE_UMA_SENHA
+Repeat for confirmation: CRIE_UMA_SENHA
+SUCCESS: A new account 'SEU_ENDEREÇO_AQUI' has been added with the id 'my_wallet'
+```
+
+Por último coloque no arquivo `scripts/deploy.py` o conteúdo do deploy:
+
+```py
+def main():
+    from ape import project, accounts
+
+    owner = accounts.load("my_wallet")
+    owner.deploy(project.Flipper)
+```
+
+Para "deployar" o contrato "rode" no terminal:
+
+```
+ape run deploy --network ::geth
+```
+
+**⚠️ Lembrando que o `ganache` precisa estar "rodando"**
+
+## ⏭ Próximos passos
+
+- Interagir com seu contrato pelo console.
+- Lançar o contrato em um testnet.
+- Entrar para a comunidade Web3Dev no Discord.
