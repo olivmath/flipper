@@ -32,7 +32,7 @@ O contrato consiste apenas em salvar um variável "boolena" que tem a possibilid
 
 ---
 
-## 👨‍💻 Código:
+## 🌳 Ambiente:
 
 **[🚨 Instale o Python antes](https://www.python.org/downloads/)**
 
@@ -46,6 +46,12 @@ ou
 
 ```
 poetry add eth-ape
+```
+
+E o plugin do `Vyper`:
+
+```
+ape plugins install vyper
 ```
 
 Crie um pasta vazia e "rode":
