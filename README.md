@@ -9,7 +9,7 @@
 - `ApeWorX`: _framework_ de "_workflow_" para construir contratos usando a linguagem `Python`
 
 **⚠️ Referências**
-**[Repositório Flipper](https://github.com/olivmath/flipper)**
+**[Meu Repositório Flipper](https://github.com/olivmath/flipper)**
 **[Documentação do Ganache](https://trufflesuite.com/docs/ganache/)**
 **[Documentação do ApeWorX](https://docs.apeworx.io/ape/stable/)**
 **[_Academy_ do ApeWorX](https://academy.apeworx.io)**
