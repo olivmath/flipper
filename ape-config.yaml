@@ -1,3 +1,7 @@
 name: flipper
 plugins:
   - name: vyper
+geth:
+  ethereum:
+    mainnet:
+      uri: http://127.0.0.1:8545

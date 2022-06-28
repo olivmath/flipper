@@ -1,6 +1,8 @@
-def main():
-    from ape.cli import get_user_selected_account
-    from ape import project
+from os import O_WRONLY
 
-    account = get_user_selected_account()
-    account.deploy(project.Flipper)
+
+def main():
+    from ape import project, accounts
+
+    owner = accounts.load("g")
+    owner.deploy(project.Flipper)
