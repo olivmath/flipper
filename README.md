@@ -272,7 +272,9 @@ ape accounts import my_wallet
 Enter Private Key: COLE_A_CHAVE_PRIVADA_AQUI
 Create Passphrase: CRIE_UMA_SENHA
 Repeat for confirmation: CRIE_UMA_SENHA
-SUCCESS: A new account 'SEU_ENDEREÇO_AQUI' has been added with the id 'my_wallet'
+SUCCESS:
+A new account 'SEU_ENDEREÇO_AQUI'
+has been added with the id 'my_wallet'
 ```
 
 Por último coloque no arquivo `scripts/deploy.py` o conteúdo do deploy:
