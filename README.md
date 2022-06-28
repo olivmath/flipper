@@ -11,7 +11,7 @@
 **⚠️ Se tiver dúvidas veja meu repositório: [Flipper](https://github.com/olivmath/flipper)**
 **[Documentação do Ganache](https://trufflesuite.com/docs/ganache/)**
 **[Documentação do ApeWorX](https://docs.apeworx.io/ape/stable/)**
-**[*Academy* do ApeWorX](https://academy.apeworx.io)**
+**[_Academy_ do ApeWorX](https://academy.apeworx.io)**
 
 ---
 
@@ -295,5 +295,4 @@ ape run deploy --network ::geth
 ## ⏭ Próximos passos
 
 - Interagir com seu contrato pelo console.
-- Lançar o contrato em um testnet.
-- Entrar para a comunidade Web3Dev no Discord.
+- Lançar o contrato em uma testnet.
